@@ -38,7 +38,7 @@ class WeatherCubit extends Cubit<WeatherStates> {
       url: "/forecast.json",
       query: {
         "key": "c1e8528f58774f589d0180616250303",
-        "q": "37.4219983,-122.084",
+        "q": "$lon,$lat",
       },
     ).then((onValue) {
       model = WeatherModel.fromJson(onValue.data);
